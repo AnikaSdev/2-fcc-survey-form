@@ -1,0 +1,191 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkgreen: rgb(31 51 28);
+  --dga: rgba(31, 51, 28, 0.42);
+  --color-green: rgb(37 219 107);
+}
+
+#main {
+  font-size: 14px;
+}
+
+#title {}
+
+#description {
+  font-size: 18px;
+}
+
+#survey-form {
+  padding: 0;
+  margin: 0 auto 0 auto;
+}
+
+p {
+  font-size: 14px;
+}
+
+body {
+  font-family: tahoma, arial, monospace;
+  margin: 0;
+}
+
+/* Yeah, I borrowed a bit of code from the template. sue me! */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgb(141 204 139);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-white);
+  margin: 0;
+  background: var(--color-darkgreen);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 158, 58, 0.8),
+      rgba(136, 206, 136, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border: none;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+input {
+  
+}
+
+form {
+  background-color: var(--dga);
+  border-radius: 0.3rem;
+  padding: 2.5rem 0.5rem;
+}
+  
+.form-group {
+  padding: 2rem 2rem 2rem 1rem;
+  margin: 0 auto 0 auto;
+}
+
+.form-control {
+  display: block;
+  height: 1.4rem;
+  width: 100%;
+  padding: 0.2rem 0.3rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 4px solid rbg(57 117 64);
+  border-radius: 0.35rem;
+
+}
+
+.form-control:focus {
+  border-color: rgb(0, 255, 30);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(120, 240, 120, 0.6);
+}
+
+/* this stuff makes your container properly sized! I DID IT!!! */
+
+.container {
+  width: 100%;
+  margin: 2em auto 0 auto; 
+}
+/* this is the good stuff here. i love you margin property! */
+
+@media (min-width: 580px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* end container css */
+
+/* end css */
+/* end css */
+/* end css */
+
+
+
+
+<main id="main">
+
+<div class="container"> <!-- Container Div for making things look nice! -->
+  
+  <header class="header">
+  <h1 id="title">How Do You Feel About Racoons?</h1>
+  <p id="description">Thank you for filling out this survey!</p>
+  
+  <form id="survey-form">
+    
+    <div class="form-group">
+       <label id="name-label" for="name">Your Name</label><br>
+       <input id="name" class="form-control" type="text" placeholder="Enter Your Name" required><br>
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label><br>
+       <input id="email" class="form-control" type="email" placeholder="Enter Your Email" required><br>
+    </div>
+    
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label><br>
+      <input id="number" class="form-control" type="number" placeholder="Enter Your Age" min="13" max="110" required>
+    
+    <div class="form-group">
+      <p>How much do you like Racoons?</p><br>
+          <select id="dropdown" class="form-control" name="role" required>
+            <option disabled selected value>No option selected</option>
+            <option value="like5">A lot!</option>
+            <option value="like4">They're pretty cool.</option>
+            <option value="like3">They're okay.</option>
+            <option value="like2">Not a fan.</option>
+            <option value="like1">Hate 'em!</option>
+      </select>
+      </div>
+      
+  </form>
+  
+    </div> <!-- Container Div --> 
+</main> 
