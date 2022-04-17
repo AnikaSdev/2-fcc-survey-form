@@ -140,13 +140,25 @@ form {
   }
 }
 
+.input-radio {
+  min-height: 1.4rem;
+  min-width: 1.4rem;
+}
+
+.input-checkbox {
+  
+}
+
+
 /* end container css */
 
-/* end css */
-/* end css */
-/* end css */
 
 
+
+
+/* end css */
+/* end css */
+/* end css */
 
 
 <main id="main">
@@ -184,6 +196,100 @@ form {
             <option value="like1">Hate 'em!</option>
       </select>
       </div>
+      
+     <div class="form-group">
+       <p>Are you afraid of racoons?</p>
+       <label>
+        <input name="afraid"
+               type="radio"
+               value="no"
+               class="input-radio"
+               checked>
+         Not at all.
+         </input>
+       </label>
+             <label>
+        <input name="afraid"
+               type="radio"
+               value="somewhat"
+               class="input-radio"
+               >
+         Somewhat.
+         </input>
+       </label>
+           <label>
+        <input name="afraid"
+               type="radio"
+               value="yes"
+               class="input-radio"
+               >
+         Yes.
+         </input>
+       </label>
+      
+      </div>
+  
+   <div class="form-group">
+      <p>What are some features of racoons that you like?</p>
+
+      <label>
+        <input name="prefer"
+               value="nose"
+               type="checkbox"
+               class="input-checkbox"/>
+        Their little nose
+       </label>
+       <label>
+        <input name="prefer"
+               value="ears"
+               type="checkbox"
+               class="input-checkbox"/>
+        Fuzzy Little Ears
+       </label>
+           <label>
+        <input name="prefer"
+               value="banditmask"
+               type="checkbox"
+               class="input-checkbox"/>
+        Scary Bandit Mask
+       </label>
+           <label>
+        <input name="prefer"
+               value="tail"
+               type="checkbox"
+               class="input-checkbox"/>
+        Stripey Ringed Tail
+       </label>
+           <label>
+        <input name="prefer"
+               value="chunky"
+               type="checkbox"
+               class="input-checkbox"/>
+        How Chunky and Fluffy They Are
+       </label>
+            <label>
+        <input name="prefer"
+               value="nose"
+               type="checkbox"
+               class="input-checkbox"/>
+        Little Grabby Hands
+       </label>
+  </div>
+      
+  <div class="form-group">
+    <p>Please enter any comments you wish to make about racoons!</p>
+      <textarea id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter Comments Here"></textarea>
+  </div>
+  
+  <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+        Submit
+        </button>
+    </div>
+  
       
   </form>
   
